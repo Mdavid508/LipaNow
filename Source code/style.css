@@ -1,0 +1,182 @@
+
+.body{
+    margin: 0px;
+}
+.container{
+    display: flex;
+    
+    align-self: flex-end;
+}
+.navbar{
+    height: 100px;
+}
+.btn{
+    background-color: blue;
+    height:40px ;
+    
+    
+}
+.text-1{
+    color: white;
+    text-transform: capitalize;
+    font-weight: 400;
+    font-size: 1.5rem;
+    text-align: center;
+    position: relative;
+    top: 100px;
+}
+.c-1{
+    margin: 0%;
+    align-items: center;
+    align-self: center;
+}
+
+.c1{
+    position: relative;
+    background-size: cover;
+    background-image: url(images/Tcket\ D.png);
+    height: 170px;
+    width: 100%;
+}
+.date{
+    height: 75px;
+    width: 55px;
+    background-color: #014B96 ;
+    position: absolute;
+}
+.date-1{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size:16px ;
+}
+.c1-t{
+    text-align: center;
+    position: relative;
+    top: 110px;
+    color: black;
+    font-weight: 400;
+    margin-bottom: 0%;
+}
+/* button Ticket */
+.btn-t{
+    background-color: #014B96;
+    position: relative;
+    top: 110px;
+    left: 40%;
+    border-color: #014B96;
+    border-radius: 10px;
+    border-style: hidden;
+    transition: 0.3s;
+
+}
+.btn-t:hover{
+    background-color: #ddd;
+}
+.btn-t a{
+    text-decoration: none;
+}
+.btn-t-text{
+    font-weight: bold;
+    color: white;
+    font-size: 1.0em;
+    text-transform: capitalize;
+}
+.c2{
+    background-image: url(images/Tcket\ D.png);
+    height: 170px;
+    width: 300%;
+    
+}
+.image1{
+    background-image: url(images/Frame\ 8.png);
+    width: 798px;
+    height: 156px;
+    
+    
+}
+
+
+h2{
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 1.8rem;
+}
+
+
+
+/* Checkout Page */
+
+.container-f{
+    width: 650px;
+    height: 420px;
+    background-color: #ddd;
+    padding-right: 100px;
+    padding-left: 100px;
+    padding-top: 5px;
+    position: relative;
+    top: 100px;
+    margin: auto;
+    
+}
+table{
+    margin: auto;
+    width: 330px;
+    height: 110px;
+    background-color: white;
+        
+}
+
+th{
+    color: #0A66C2;
+}
+ 
+table, th, td{
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+    height: 25px;
+}
+td{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.checkout-i{
+   width: 100%;
+   height: 170px;
+   background-image: url(images/Tcket\ D.png);
+   background-size: cover;
+   
+    
+}
+.checkout-t{
+    font-weight: bold;
+    font-size: 1.5em;
+    text-transform: capitalize;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.input-t{
+    width: 120px;
+    border-style: hidden;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.input-t:focus{
+    outline: none;
+}
+
+/* btn checkout */
+.btn-checkout{
+   height: 30px;
+   border-radius: 5px;
+   background-color: #0A66C2;
+   border-style: none;
+   position: relative;
+   top: 15px;
+   left: 250px;
+   
+}
