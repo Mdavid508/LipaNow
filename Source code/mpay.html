@@ -51,24 +51,40 @@
   
    </nav>
 
-    <div class="container-p mt-5">
-    <Section class="text-t text-center mt-2">
+   
+    
+    
+    <form action="" class="m-3 bg-light rounded-2 p-2">
+      <Section class="text-t text-center mt-2">
         M-Pesa Checkout
     </Section>
     <!-- center the image -->
-    <div class="text-center">
-        <img src="/images/M-pesa.png" alt="M-Pesa Logo">  
+    <div class="row">
+      <div class="col-12 d-flex justify-content-center">
+        <img src="/images/M-pesa.png" alt="M-Pesa Logo"> 
+      </div>
     </div>
-    <form action="">
-        <label for="totalAmount" class="m-2">Total Amount</label> <br>
-        <input type="text" id="totalAmount" name="totalAmount" value=" KSHS 1200" class="form-payment"><br>
-        <label for="phoneNumber" class="m-2">Enter the M-Pesa Number</label><br>
-        <input type="tel" name="phoneNumber" id="phoneNumber" placeholder="+254xxxxxxxx" class="form-payment" > <br>
-        <div class="text-center">
-            <button type="submit" class="btn"> Confirm </button>
+      <div class="row">
+        <div class="form-group col-12">
+          <label for="totalAmount" class="form-label">Total Amount </label>
+          <input type="number" name="totalAmount" id="totalAmount" value="1200" class="form-control">
         </div>
-        
+        <div class="form-group col-12">
+          <label for="mpesaNumber" class="form-label">Enter the M-Pesa Number</label>
+          <input type="tel" name="mpesaNumber" id="mpesaNumber" class="form-control">
+        </div>
+
+        <div class="col-12 d-flex justify-content-center m-2">
+          <button type="submit" class="btn btn-success">Confirm</button>
+        </div>
+      </div>
     </form>
+
+
+    
+
+
+
     </div>
 
 
