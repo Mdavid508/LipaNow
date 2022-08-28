@@ -11,48 +11,55 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
   
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-light">
-      <div class="container c-1">
-        <div class="col-8">
-          <a class="navbar-brand" href="#">LipaNow</a>
-        </div>
-        <div class="col-4">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse " id="navbarSupportedContent">
+    <nav class="navbar navbar-expand-lg bg-light p-2">
+       
           
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
+      <a class="navbar-brand" href="#">LipaNow</a>
+    
+    
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse mx-auto" id="navbarSupportedContent">
+      
+        <ul class="navbar-nav mx-auto mt-2 mt-lg-0 ">
+          <li class="nav-item active">
+             <a href="" class="nav-link" data-bs-toggle="modal" data-bs-target="#register-modal"> Register</a>                   
+          </li>
               
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle btn" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Login
+                          
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle"  role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Login
                   </a>
                   <ul class="dropdown-menu ">
-                    <li><a class="dropdown-item" href="#">Admin</a></li>
-                    <li><a class="dropdown-item" href="#">Event Companies</a></li>
+                  <li>
+                      <!-- <div class=" btn btn-link" data-bs-toggle="modal" data-bs-target="#admin-login">Admin</div> -->
+                  <a href="" class="nav-link" data-bs-toggle="modal" data-bs-target="#admin-login" role="button" aria-pressed="true" > Admin</a>
+                  </li>
+                  <li><a  href="" class="nav-link" data-bs-toggle="modal" data-bs-target="#company-login">Event Companies</a></li>
                   </ul>
-                </li>
-              
-              
-              
-              </ul>     
+              </li>
+          
+          
+          
+      
+          </ul>     
 
-          </div>
-        </div>       
-        </div>
-      </nav>
+      </div>
+          
+    
+  </nav>
  <!-- The carousel -->
       <div class="container-fluid d-flex justify-content-center">
         <section class="image1">
-        <p class="text-1">Book your tickets to all upcoming events countrywide with us
-        </p>
+          <div class="row">
+            <div class="col">
+              <p class="text-1">Book your tickets to all upcoming events countrywide with us
+              </p>
+            </div>
+          </div>
+        
         </section>
         
       </div>
@@ -73,6 +80,7 @@
                 Dedan Kimathi University of Technology
               </p>
               <a href="checkout.html">
+                
                 <button class="btn-t">
                   <Section class="text-center btn-t-text">Buy Tickets</Section>
                 </button>

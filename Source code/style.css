@@ -1,21 +1,34 @@
 
 .body{
     margin: 0px;
+    background-color: black;
 }
 .container{
     display: flex;
     
     align-self: flex-end;
 }
-.navbar{
-    height: 100px;
+.navbar-brand{
+    font-size: 1.5em;
 }
-.btn{
+
+/* Change Nav link color and Font size */
+
+.navbar .navbar-nav .nav-link {
+    color: #0A66C2;
+    font-size: 1.1em;
+}
+ /* Hover implementation */
+.navbar .navbar-nav .nav-link:hover{
+color: #D9D9D9;
+}
+
+/* .btn{
     background-color: blue;
-    height:40px ;
+    height:40px ; */
     
     
-}
+/* } */
 .text-1{
     color: white;
     text-transform: capitalize;
@@ -34,7 +47,7 @@
 .c1{
     position: relative;
     background-size: cover;
-    background-image: url(images/Tcket\ D.png);
+    background-image: url(/images/Tcket\ D.png);
     height: 170px;
     width: 100%;
 }
@@ -65,7 +78,7 @@
     top: 110px;
     left: 40%;
     border-color: #014B96;
-    border-radius: 10px;
+    border-radius: 5px;
     border-style: hidden;
     transition: 0.3s;
 
@@ -83,14 +96,14 @@
     text-transform: capitalize;
 }
 .c2{
-    background-image: url(images/Tcket\ D.png);
+    background-image: url(/images/Tcket\ D.png);
     height: 170px;
     width: 300%;
     
 }
 .image1{
-    background-image: url(images/Frame\ 8.png);
-    width: 798px;
+    background-image: url(/images/Frame\ 8.png);
+    width: 70%;
     height: 156px;
     
     
@@ -116,7 +129,6 @@ h2{
     padding-left: 100px;
     padding-top: 5px;
     position: relative;
-    top: 100px;
     margin: auto;
     
 }
@@ -145,7 +157,7 @@ td{
 .checkout-i{
    width: 100%;
    height: 170px;
-   background-image: url(images/Tcket\ D.png);
+   background-image: url(/images/Tcket\ D.png);
    background-size: cover;
    
     
@@ -169,6 +181,36 @@ td{
     outline: none;
 }
 
+
+/* button Generic Properties */
+/* .btn{
+    background-color: #014B96;
+    border-radius: 5px;
+    border-style: none;
+    margin: 5px;
+    color: white;
+} */
+
+/* Generic Text */
+.text{
+    font-size: 1.2em;
+    font-weight: bold;
+    color: black;
+    margin: 5px;
+}
+/* Normal Text */
+.text-n{
+    font-size:1.0em;
+    color: black;
+    margin: 5px;
+}
+
+/* .btn:hover{
+    border: 1px solid #ddd;
+    background-color: #014B96;
+    color: whitesmoke;
+} */
+
 /* btn checkout */
 .btn-checkout{
    height: 30px;
@@ -177,6 +219,63 @@ td{
    border-style: none;
    position: relative;
    top: 15px;
-   left: 250px;
+   left: 150px;
    
+}
+
+/* m-pay page */
+
+.container-p{
+    width:55%;
+    height:420px;
+    margin: auto;
+    background-color: #ddd;
+    border-radius: 5px;
+}
+
+.text-t{
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.form-payment{
+    border-style: none;
+    width: 90%;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+/* Confirm Page */
+
+.container-c{
+    background-color: #D9D9D9;
+   
+    border-radius:5px;
+}
+
+.hr-line{
+    margin-top: 5px;
+    color: white;
+    border: 2px solid rgb(15, 15, 15);
+}
+
+
+/* Admin Page */
+
+.admin-c{
+    width: 85%;
+    border-radius: 5px;
+}
+
+.input-type{
+    background-color: white;
+    border-radius: 5px;
+    border-color: black;
+    outline: none;
+    
+}
+
+.input-type:focus, 
+.input-type:active {
+     border-color: #0A66C2;
 }
