@@ -12,6 +12,8 @@
     font-size: 1.5em;
 }
 
+
+
 /* Change Nav link color and Font size */
 
 .navbar .navbar-nav .nav-link {
@@ -132,7 +134,42 @@ h2{
     margin: auto;
     
 }
-table{
+
+
+
+
+
+.form-mpay{
+    max-width: 330px;
+    margin: auto;
+}
+.table-primary{
+    margin: auto;
+    max-width: 370px;
+}
+
+.b-o{
+    border: none;
+    background-color: white;
+    padding-left: 0%;
+}
+
+.b-o:disabled{
+    background-color: white;
+}
+
+/* M-pay Price Input */
+.b-c:disabled{
+    background-color: white;
+}
+
+th{
+    color: #0A66C2;
+}
+
+/* input[type="number"]:disabled{background-color:white;} */
+
+/* table{
     margin: auto;
     width: 330px;
     height: 110px;
@@ -140,9 +177,7 @@ table{
         
 }
 
-th{
-    color: #0A66C2;
-}
+
  
 table, th, td{
     border: 1px solid #ddd;
@@ -153,7 +188,8 @@ td{
     text-align: center;
     text-transform: uppercase;
     font-weight: 600;
-}
+} */
+
 .checkout-i{
    width: 100%;
    height: 170px;
@@ -249,8 +285,9 @@ td{
 
 .container-c{
     background-color: #D9D9D9;
-   
     border-radius:5px;
+    margin: auto;
+    max-width: 330px;
 }
 
 .hr-line{
@@ -278,4 +315,15 @@ td{
 .input-type:focus, 
 .input-type:active {
      border-color: #0A66C2;
+}
+
+
+
+/* AdminDashboard */
+.dashb{
+    max-width: 360px;
+}
+
+.text-d{
+    text-decoration: none;
 }

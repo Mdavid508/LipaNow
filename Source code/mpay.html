@@ -54,7 +54,7 @@
    
     
     
-    <form action="" class="m-3 bg-light rounded-2 p-2">
+    <form action="" class=" mt-2  rounded-2 p-2 form-mpay">
       <Section class="text-t text-center mt-2">
         M-Pesa Checkout
     </Section>
@@ -67,7 +67,7 @@
       <div class="row">
         <div class="form-group col-12">
           <label for="totalAmount" class="form-label">Total Amount </label>
-          <input type="number" name="totalAmount" id="totalAmount" value="1200" class="form-control">
+          <input type="number" name="totalAmount" id="totalAmount" value="1200" class="form-control b-c" aria-label="Disabled input example" disabled>
         </div>
         <div class="form-group col-12">
           <label for="mpesaNumber" class="form-label">Enter the M-Pesa Number</label>
@@ -75,7 +75,8 @@
         </div>
 
         <div class="col-12 d-flex justify-content-center m-2">
-          <button type="submit" class="btn btn-success">Confirm</button>
+          <!-- <button type="submit" class="btn btn-success">Confirm</button> -->
+          <a href="confirm.html" role="button" class="btn btn-success"> Confirm </a>
         </div>
       </div>
     </form>
