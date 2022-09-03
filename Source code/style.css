@@ -327,3 +327,18 @@ td{
 .text-d{
     text-decoration: none;
 }
+
+
+
+/* Ticket Download page */
+
+.ticket{
+    max-width: 360px;
+    
+    margin: auto;
+}
+
+.bg-image{
+    max-width: 360px;
+    background-image: url(/images/bg-image.svg);
+}

@@ -15,7 +15,9 @@
     <nav class="navbar navbar-expand-lg bg-light p-2">
        
           
-      <a class="navbar-brand" href="#">LipaNow</a>
+      <a class="navbar-brand" href="#">LipaNow
+        <img src="/images/final logo.svg" alt="" width="64" height="64">
+      </a>
     
     
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,8 +27,10 @@
       
         <ul class="navbar-nav mx-auto mt-2 mt-lg-0 ">
           <li class="nav-item active">
-             <a href="" class="nav-link" data-bs-toggle="modal" data-bs-target="#register-modal"> Register</a>                   
+             <a href="" class="nav-link" data-bs-toggle="modal" data-bs-target="#register-modal"> Register</a>
+                               
           </li>
+          
               
                           
               <li class="nav-item dropdown">
@@ -41,6 +45,10 @@
                   <li><a  href="" class="nav-link" data-bs-toggle="modal" data-bs-target="#company-login">Event Companies</a></li>
                   </ul>
               </li>
+              <li class="nav-item">
+                
+                <a href="" class="nav-link" data-bs-toggle="modal" data-bs-target="#contactus"> Contact Us</a>                  
+             </li>    
           
           
           
@@ -174,6 +182,45 @@
           </div>
       </div>
   </div>
+
+                          <!-- Contact us Modal -->
+
+      <div class="modal fade" tabindex="-1" id="contactus" aria-hidden="true" aria-labelledby="contactus">
+        <div class="modal-dialog ">
+          <div class="modal-content">
+            <div class="modal-header bg-warning">
+              <div class="modal-title">
+                Contact Us
+              </div>
+              <button class="btn-close" data-bs-dismiss="modal" aria-label="close" ></button>
+            </div>
+            <div class="modal-body">
+              <form action="">
+                <div class="form-group">
+                  <label for="name" class="form-label">Name</label>
+                  <input type="text" name="name" id="name" class="form-control" required>
+                </div>
+                <div class="form-group">
+                  <label for="contactemail" class="form-label">Email</label>
+                  <input type="email" name="contactemail" id="contactemail" class="form-control" required>
+                </div>
+                <div class="form-group">
+                  <label for="description" class="form-label">Type your message here</label>
+                  <textarea name="description" id="description" cols="30" rows="10" class="form-control" required></textarea>
+                </div>
+              </form>
+            </div>
+              
+            
+            <div class="modal-footer">
+              <button class="btn btn-primary">Submit</button>
+              <button class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
+            </div>
+          </div>
+         
+
+        </div>
+      </div>
 
 
 </body>
