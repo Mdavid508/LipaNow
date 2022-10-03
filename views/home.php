@@ -1,6 +1,6 @@
 <?php
-include 'head.php';
-include 'navbar.php';
+include 'includes/head.php';
+include 'includes/navbar.php';
 ?>
 
 <!-- <h1>The first php page</h1> -->
@@ -127,5 +127,5 @@ include 'navbar.php';
         </div>
       </div>
 <?php
-include 'footer.php';
+include 'includes/footer.php';
 ?>

@@ -1,6 +1,6 @@
 <?php
-include 'head.php';
-include 'navbar.php';
+include 'includes/head.php';
+include 'includes/navbar.php';
 
 ?>
 
@@ -40,6 +40,6 @@ include 'navbar.php';
 
 <!-- Admin Login Modal -->
  <?php
- include 'footer.php';
+ include 'includes/footer.php';
  ?>
  
