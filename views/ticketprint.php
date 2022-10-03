@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../src/style.css">
     <script src=
     "https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js">
         </script>
@@ -20,7 +20,7 @@
        
           
         <a class="navbar-brand" href="#">LipaNow
-          <img src="/images/final logo.svg" alt="" width="64" height="64">
+          <img src="../images/final logo.svg" alt="" width="64" height="64">
         </a>
       
       
@@ -73,7 +73,7 @@
             <section>Event Name</section>
            </div>
         <div class="col-12 d-flex justify-content-center">
-            <img src="/images/ticketpicture.png" alt="ticket" srcset="" class="img-fluid mx-auto d-block">
+            <img src="../images/ticketpicture.png" alt="ticket" srcset="" class="img-fluid mx-auto d-block">
         </div>
             
            
@@ -105,7 +105,7 @@
 
     <div class="row ">
         <div class="col-12 d-flex justify-content-center">
-            <img src="/images/barcode2.svg" alt="barcode" class="img-fluid" style="height: 100px; width: 100px;" >
+            <img src="../images/barcode2.svg" alt="barcode" class="img-fluid" style="height: 100px; width: 100px;" >
         </div>
             
     </div>
