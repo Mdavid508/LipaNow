@@ -62,7 +62,7 @@
             <div class="modal-body">
                 <div class="row">
                     <div class="col d-flex justify-content-around">
-                        <a href="loginC.html" class="btn btn-primary" role="button" aria-pressed="true">Company</a>
+                        <a href="companyreg.php" class="btn btn-primary" role="button" aria-pressed="true">Company</a>
                         <a href="company.html" class="btn btn-primary" role="button" aria-pressed="true">Admin</a>
                     </div>
                 </div>

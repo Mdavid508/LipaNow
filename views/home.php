@@ -43,7 +43,7 @@ include 'includes/navbar.php';
               <p class="c1-t">
                 Dedan Kimathi University of Technology
               </p>
-              <a href="checkout.html">
+              <a href="checkout.php">
                 
                 <button class="btn-t">
                   <Section class="text-center btn-t-text">Buy Tickets</Section>

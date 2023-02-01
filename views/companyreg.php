@@ -4,7 +4,7 @@ include 'include/navbar.php';
 ?>
 
      <!-- Company Registration Form -->
-     <form action="" class="bg-light m-2 rounded">
+     <form action="" class="bg-light m-2 rounded" method="$_POST">
         <div class="text-center text">
             <section><b>Company Registration</b></section>
         </div>
