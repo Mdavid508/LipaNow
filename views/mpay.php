@@ -3,34 +3,52 @@ include 'includes/head.php';
 include 'includes/navbar.php';
 ?>
 
-  <!-- M-pesa Checkout Page -->
-  <form action="" class=" mt-2  rounded-2 p-2 form-mpay">
-      <Section class="text-t text-center mt-2">
-        M-Pesa Checkout
+<!-- M-pesa Checkout Page -->
+<div class="container-f mx-auto">
+<h2>Ticket Checkout</h2>
+    <div class="step">
+          <p class="step-text">2</p>
+    </div>
+  <form action="" class="rounded-2 p-2 form-mpay">
+    <Section class="text-t text-center mt-1">
+      M-Pesa Checkout
     </Section>
     <!-- center the image -->
     <div class="row">
       <div class="col-12 d-flex justify-content-center">
-        <img src="../images/M-pesa.png" alt="M-Pesa Logo"> 
+        <img src="../images/M-pesa.png" alt="M-Pesa Logo">
       </div>
     </div>
-      <div class="row">
-        <div class="form-group col-12">
-          <label for="totalAmount" class="form-label">Total Amount </label>
-          <input type="number" name="totalAmount" id="totalAmount" value="1200" class="form-control b-c" aria-label="Disabled input example" disabled>
-        </div>
-        <div class="form-group col-12">
-          <label for="mpesaNumber" class="form-label">Enter the M-Pesa Number</label>
-          <input type="tel" name="mpesaNumber" id="mpesaNumber" class="form-control">
-        </div>
-
-        <div class="col-12 d-flex justify-content-center m-2">
-          <!-- <button type="submit" class="btn btn-success">Confirm</button> -->
-          <a href="confirm.php" role="button" class="btn btn-success"> Confirm </a>
-        </div>
+    <div class="row">
+      <div class="form-group col-12">
+        <label for="totalAmount" class="form-label">Total Amount </label>
+        <input type="number" name="totalAmount" id="totalAmount" value="1200" class="form-control b-c" aria-label="Disabled input example" disabled>
       </div>
-    </form>
+      <div class="form-group col-12">
+        <label for="mpesaNumber" class="form-label">Enter the M-Pesa Number</label>
+        <input type="text" name="mpesaNumber" id="mpesaNumber" class="form-control" change = "checkNumber()" placeholder="0769798443">
+        <section class="text-danger mt-1 text-center input-error" id = "mpesaError">Confirm you have Entered the Correct Mpesa Number Before Proceeding</section>
+        <section id="test">Phone Number</section>
+      </div>
+            
+    </div>
+    
+  </form>
+  <div class="row mt-2">
+      <div class="col-6 d-flex justify-content-center">
+        <!-- <button type="submit" class="btn btn-success">Confirm</button> -->
+        <a href="checkout.php" role="button" class="btn btn-danger"> Previous </a>
+        
+      </div>
+      <div class="col-6 d-flex justify-content-center">
+        <!-- <button type="submit" class="btn btn-success">Confirm</button> -->
+        <a href="confirm.php" role="button" id="mpesaConfirm" class="btn btn-success"> Confirm </a>
+      </div>
+      
+      </div>
+</div>
 
+<script src="../javascript/checkout.js"></script>
 <?php
 include 'includes/footer.php';
 

@@ -2,10 +2,10 @@
 
     
     <!-- Naviagtion Bar -->
-    <nav class="navbar navbar-expand-lg bg-light p-2">
+    <nav class="navbar navbar-expand-lg bg-light-custom p-2">
        
           
-        <a class="navbar-brand" href="#">LipaNow
+        <a class="navbar-brand" href="../views/home.php">LipaNow
           <img src="../images/final logo.svg" alt="" width="64" height="64">
         </a>
       

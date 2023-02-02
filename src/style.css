@@ -25,6 +25,9 @@
 color: #D9D9D9;
 }
 
+.bg-light-custom{
+    background-color: #D9D9D9;
+}
 /* .btn{
     background-color: blue;
     height:40px ; */
@@ -124,19 +127,33 @@ h2{
 /* Checkout Page */
 
 .container-f{
-    width: 650px;
-    height: 420px;
-    background-color: #ddd;
-    padding-right: 100px;
-    padding-left: 100px;
-    padding-top: 5px;
-    position: relative;
+    max-width: 640px;
+    height: auto;
+    background-color: #D9D9D9;
+    padding: 10px;
+    border-radius: 5px;
     margin: auto;
+    margin-top: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
     
 }
 
+/**
+Styling user input errors
+*/
+.input-error{
+    color: red;
+    display: none;
+}
+/* 
+styling stepper forms */
 
-
+.stepper-form{
+    background-color: #D9D9D9;
+    max-width: 640px;
+    height: auto;
+}
 
 
 .form-mpay{
@@ -150,17 +167,17 @@ h2{
 
 .b-o{
     border: none;
-    background-color: white;
+    background-color: #D9D9D9;
     padding-left: 0%;
 }
 
 .b-o:disabled{
-    background-color: white;
+    background-color: #D9D9D9;
 }
 
 /* M-pay Price Input */
 .b-c:disabled{
-    background-color: white;
+    background-color: #D9D9D9;
 }
 
 th{
@@ -189,6 +206,24 @@ td{
     text-transform: uppercase;
     font-weight: 600;
 } */
+
+/* checkout page */
+.step{
+ margin: auto;   
+ width: 60px;
+ height: 60px;
+ background-color: #0A66C2;
+ border-radius: 50%; 
+ position: relative;  
+}
+
+.step-text{
+  color: #ffffff;
+  position: absolute; 
+  top: 12px;
+  right: 24px;
+  font-size: 24px; 
+}
 
 .checkout-i{
    width: 100%;
@@ -272,6 +307,7 @@ td{
 .text-t{
     font-size: 1.2em;
     font-weight: 600;
+    color: #0A66C2;
 }
 
 .form-payment{
@@ -293,7 +329,7 @@ td{
 .hr-line{
     margin-top: 5px;
     color: white;
-    border: 2px solid rgb(15, 15, 15);
+    border: 2px solid white;
 }
 
 
