@@ -1,12 +1,14 @@
 <?php
-include 'include/head.php';
-include 'include/navbar.php';
+include 'includes/head.php';
+include 'includes/navbar.php';
+
 ?>
 
      <!-- Company Registration Form -->
-     <form action="" class="bg-light m-2 rounded" method="$_POST">
+     <form action="" class="container-f mx-auto m-2 rounded" id="companyReg" method="$_POST">
         <div class="text-center text">
-            <section><b>Company Registration</b></section>
+            
+            <h2>Company Registration</h2>
         </div>
         <div class="row p-2">
             <div class="col-lg-6 col-md-6 col-12">
@@ -15,14 +17,15 @@ include 'include/navbar.php';
             </div>
             <div class="col-lg-6 col-md-6 col-12">
                 <label for="telephone">Telephone Number</label>
-                    <input type="tel" name="telephone" id="telephone" class="form-control mt-2" required>
+                    <input type="tel" onchange = "validatePhone()" name="telephone" id="telephone" class="form-control mt-2" required placeholder="0769798443" maxlength="10"><br>
+                    <div class="input-error" id="telephoneError">Enter a valid Phone Number</div>
             </div>
             
         </div>
         <div class="row p-2">
-            <div class="form-group col-lg-6 col-md-6">
+            <div class="form-group col-lg-6 col-md-6 col-12">
                 <label for="cemail">Company Email</label>
-                <input type="email" name="cemail" id="cemail" class="form-control mt-2" required>
+                <input type="email" name="cemail" id="cemail" class="form-control mt-2" required placeholder="companyname@gmail.com">
             </div>
             <div class="form-group col-lg-6 col-md-6 col-12">
                 <label for="cpassword">Password</label>
@@ -30,7 +33,7 @@ include 'include/navbar.php';
             </div>
             
         </div>
-        <div class="form-group p-2">
+        <div class="form-group p-2 col-lg-6 col-md-6 col-12">
             <label for="rcpassword">Repeat Password</label>
             <input type="password" name="rcpassword" id="rcpassword" class="form-control mt-2" required>
         </div>
@@ -44,7 +47,11 @@ include 'include/navbar.php';
         </div>
     </form>
 
+<script src="../javascript/reg.js"></script>    
+
 <?php
-include 'include/footer.php';
+
+include 'includes/footer.php';
+
 
 ?>

@@ -4,9 +4,10 @@ include 'includes/navbar.php';
 ?>
 
    <!-- Event Registration -->
-   <form action="" class="m-2 rounded-2 bg-light p-3">
+   <form action="" class="m-2 rounded-2 container-f mx-auto">
        <div class="text-center text">
-         <section><b>Event Details</b></section>
+         
+         <h2>Event Details</h2>
        </div>
        <div class="row">
         <div class=" form-group col-lg-6 col-md-6 col-12">
@@ -27,6 +28,12 @@ include 'includes/navbar.php';
          <div class="form-group col-lg-6 col-md-6 col-12">
           <label for="eventLocation">Location</label>
           <input type="text" name="eventLocation" id="eventLocation" class="form-control mt-2 mb-2" required>
+         </div>
+       </div>
+       <div class="row">
+       <div class="form-group col-12">
+          <label for="eventDescription">Event Description</label>
+          <textarea class="form-control mt-2 mb-2" id="eventDescription" rows="4" maxlength="200" placeholder="Describe your event in 200 words"></textarea>
          </div>
        </div>
        <div class="form-group">

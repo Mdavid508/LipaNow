@@ -11,7 +11,7 @@ include 'includes/navbar.php';
     
     <!-- <p>step 1</p> -->
    
-<form action="" class="">
+<form action="" class="" >
 <section class="text-t text-center mt-2 mb-2">Tickets Selection</section>
             <img src="../images/TcketD.png" alt="eventimage" class="img-fluid mx-auto d-block" >
 

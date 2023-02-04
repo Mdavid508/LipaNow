@@ -53,7 +53,7 @@ color: #D9D9D9;
     position: relative;
     background-size: cover;
     background-image: url("../images/TcketD.png");
-    height: 170px;
+    height: 250px;
     width: 100%;
 }
 .date{
@@ -71,35 +71,34 @@ color: #D9D9D9;
 .c1-t{
     text-align: center;
     position: relative;
-    top: 110px;
+    top: 170px;
     color: black;
     font-weight: 400;
     margin-bottom: 0%;
 }
 /* button Ticket */
 .btn-t{
-    background-color: #014B96;
+    
     position: relative;
-    top: 110px;
+    top: 185px;
     left: 40%;
-    border-color: #014B96;
-    border-radius: 5px;
-    border-style: hidden;
-    transition: 0.3s;
+    
+    
 
 }
-.btn-t:hover{
-    background-color: #ddd;
+/* .btn-t:hover{
+    background-color: #D9D9D9;
+    color: #0A66C2;
 }
 .btn-t a{
     text-decoration: none;
 }
 .btn-t-text{
-    font-weight: bold;
+    font-weight: normal;
     color: white;
     font-size: 1.0em;
     text-transform: capitalize;
-}
+} */
 .c2{
     background-image: url(../images/Tcket\ D.png);
     height: 170px;

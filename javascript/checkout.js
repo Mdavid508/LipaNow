@@ -29,12 +29,17 @@ var ticketPrice = document.getElementById('ticketPrice').setAttribute('value', 1
     }
 
 //verify the value of the number of tickets before proceeding to checkout
+let tAmount = document.getElementById("totalAmount").value;
+ console.log(totalAmount);
  btn.addEventListener("click", pCheckout);
+ 
  var checkoutError = document.getElementById("checkoutError")
 
  function pCheckout(){
     let tAmount = document.getElementById("totalAmount").value;
-    if(tAmount>=1200){
+    let tValue = document.getElementById("ticketsNumber").value;
+    console.log(tValue);
+    if(totalAmount>=1){
         checkoutError.style.display = "none";
         window.location.href = "mpay.php"
              
@@ -45,22 +50,22 @@ var ticketPrice = document.getElementById('ticketPrice').setAttribute('value', 1
  }
     
 //  The Mpay page script to check whether the telephone number is valid before proceeding
- let regex = /^0\d{9}$/;
- let mpesaError = document.getElementById("mpesaError");
- let mpesaNumber = document.getElementById("mpesaNumber");
- mpesaNumber.addEventListener("change",checkNumber);
+//  let regex = /^0\d{9}$/;
+//  let mpesaError = document.getElementById("mpesaError");
+//  let mpesaNumber = document.getElementById("mpesaNumber");
+//  mpesaNumber.addEventListener("change",checkNumber);
  
  
- function checkNumber(){
-    let mpesaNumber = document.getElementById("mpesaNumber");
-    mpesaValue = mpesaNumber.value;
-    console.log("mpesaValue")
-    if(mpesaValue.match(regex)){
-        mpesaError.style.display = "block";
-    }else{
-        mpesaError.style.display = "none";
-    }
-    // let test = document.getElementById("test");
-    // test.textContent = mpesaValue;
+//  function checkNumber(){
+//     let mpesaNumber = document.getElementById("mpesaNumber");
+//     mpesaValue = mpesaNumber.value;
+//     console.log("mpesaValue")
+//     if(mpesaValue.match(regex)){
+//         mpesaError.style.display = "block";
+//     }else{
+//         mpesaError.style.display = "none";
+//     }
+//     // let test = document.getElementById("test");
+//     // test.textContent = mpesaValue;
     
- }
+//  }

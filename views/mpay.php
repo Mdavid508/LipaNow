@@ -26,9 +26,9 @@ include 'includes/navbar.php';
       </div>
       <div class="form-group col-12">
         <label for="mpesaNumber" class="form-label">Enter the M-Pesa Number</label>
-        <input type="text" name="mpesaNumber" id="mpesaNumber" class="form-control" change = "checkNumber()" placeholder="0769798443">
-        <section class="text-danger mt-1 text-center input-error" id = "mpesaError">Confirm you have Entered the Correct Mpesa Number Before Proceeding</section>
-        <section id="test">Phone Number</section>
+        <input type="tel" name="mpesaNumber" id="mpesaNumber" class="form-control" onchange = "checkNumber()" placeholder="0769798443" maxlength="10">
+        <section class="text-danger mt-1 text-center input-error" id = "mpesaError">Please Enter A Valid Mpesa Number</section>
+        <section class="text-danger mt-1 text-center input-error" id = "mpesaConfirmError">Please Enter A Valid Mpesa Number before Proceeding</section>
       </div>
             
     </div>
@@ -42,13 +42,13 @@ include 'includes/navbar.php';
       </div>
       <div class="col-6 d-flex justify-content-center">
         <!-- <button type="submit" class="btn btn-success">Confirm</button> -->
-        <a href="confirm.php" role="button" id="mpesaConfirm" class="btn btn-success"> Confirm </a>
+        <div type="submit" class="btn btn-success" id="mpesaConfirm" >Confirm</div>
       </div>
       
       </div>
 </div>
 
-<script src="../javascript/checkout.js"></script>
+<script src="../javascript/reg.js"></script>
 <?php
 include 'includes/footer.php';
 

@@ -9,7 +9,7 @@ include 'includes/navbar.php';
 
 
  <!-- The carousel -->
- <div class="container-fluid d-flex justify-content-center">
+ <div class="container-fluid d-flex justify-content-center mt-2">
         <section class="image1 img-fluid">
           <div class="row">
             <div class="col">
@@ -43,12 +43,8 @@ include 'includes/navbar.php';
               <p class="c1-t">
                 Dedan Kimathi University of Technology
               </p>
-              <a href="checkout.php">
-                
-                <button class="btn-t">
-                  <Section class="text-center btn-t-text">Buy Tickets</Section>
-                </button>
-              </a>
+              
+              <a href="checkout.php" type="button" class=" btn-t btn btn-primary">Buy Tickets</a>
              
             </div>
 

@@ -8,5 +8,6 @@
 </head>
 <body>
     <h1>Landing here</h1>
+    <a href="../views/home.php">Ready</a>
 </body>
 </html>
