@@ -39,7 +39,7 @@ let tAmount = document.getElementById("totalAmount").value;
     let tAmount = document.getElementById("totalAmount").value;
     let tValue = document.getElementById("ticketsNumber").value;
     console.log(tValue);
-    if(totalAmount>=1){
+    if(tValue>=1){
         checkoutError.style.display = "none";
         window.location.href = "mpay.php"
              
@@ -69,3 +69,7 @@ let tAmount = document.getElementById("totalAmount").value;
 //     // test.textContent = mpesaValue;
     
 //  }
+
+let fname = 'mugo';
+let lname = 'david'
+console.log(`my name is ${fname} and my last name is${lname}`);
