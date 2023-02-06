@@ -42,13 +42,13 @@ include 'includes/navbar.php';
                     
                     
                 </tr>
-                <div class="input-error" id="quantityError">Ticket quantity must be greater than 1</div>
+                <div class="input-error-new" id="quantityError"></div>
             </table>
             <div class="text-center m-2">
                 <!-- <button type="submit" class="btn btn-primary"> Proceed to Checkout  </button> -->
                 
                 <div role="submit" id= "checkoutbtn" class="btn btn-primary">Proceed to Checkout</div><br>
-                <div class="input-error" id="checkoutError" >Enter the Number of Tickets required</div>
+                <div class="input-error-new" id="checkoutError" ></div>
             </div>
 </form>
 </div>

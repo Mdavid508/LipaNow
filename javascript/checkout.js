@@ -9,17 +9,19 @@ var ticketPrice = document.getElementById('ticketPrice').setAttribute('value', 1
     //function that actually ensures the number of tickets is not below 0.
      //page load
     var btn = document.getElementById("checkoutbtn");
-    var quantityError = document.getElementById("quantityError");
+    let  quantityError = document.getElementById("quantityError");
     function checkQuantity(){
        
         let tValue = document.getElementById("ticketsNumber").value;
         console.log(tValue);
         if(tValue<1){
             // alert("The Number of Tickets should be more than 1");
-            quantityError.style.display = "block";
+            // quantityError.style.display = "block";
+            quantityError.innerHTML = "Ticket quantity must be greater than 1";
+            setTimeout(()=>quantityError.remove(), 3000); 
 
         }else{
-            quantityError.style.display = "none";
+            // quantityError.style.display = "none";
             var tPrice = document.getElementById("ticketPrice").value;
             var totalAmount = document.getElementById("totalAmount").setAttribute("value", tValue * tPrice);
             btn.classList.add("btn-success");
@@ -29,23 +31,26 @@ var ticketPrice = document.getElementById('ticketPrice').setAttribute('value', 1
     }
 
 //verify the value of the number of tickets before proceeding to checkout
-let tAmount = document.getElementById("totalAmount").value;
- console.log(totalAmount);
+// let tAmount = document.getElementById("totalAmount").value;
+//  console.log(totalAmount);
+
  btn.addEventListener("click", pCheckout);
  
- var checkoutError = document.getElementById("checkoutError")
+ let checkoutError = document.getElementById("checkoutError")
 
  function pCheckout(){
-    let tAmount = document.getElementById("totalAmount").value;
+    // e.preventDefault();
+   
     let tValue = document.getElementById("ticketsNumber").value;
     console.log(tValue);
-    if(tValue>=1){
-        checkoutError.style.display = "none";
-        window.location.href = "mpay.php"
+    if(tValue===''){
+        checkoutError.innerHTML = "Enter the Number of Tickets required";
+        setTimeout(() => checkoutError.remove(), 3000); 
              
-        
-    }else{
-        checkoutError.style.display = "block";  
+        }else{
+        window.location.href = "mpay.php"
+        // checkoutError.style.display = "block";
+         
     }
  }
     
@@ -70,6 +75,6 @@ let tAmount = document.getElementById("totalAmount").value;
     
 //  }
 
-let fname = 'mugo';
-let lname = 'david'
-console.log(`my name is ${fname} and my last name is${lname}`);
+// let fname = 'mugo';
+// let lname = 'david'
+// console.log(`my name is ${fname} and my last name is${lname}`);

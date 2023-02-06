@@ -145,6 +145,10 @@ Styling user input errors
     color: red;
     display: none;
 }
+
+.input-error-new{
+    color: red;
+}
 /* 
 styling stepper forms */
 
